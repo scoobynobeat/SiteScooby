@@ -1,0 +1,144 @@
+{
+  "project_name": "Scooby no Beat - Link-in-Bio & Official Artist Hub",
+  "archetype": "THE PERFORMANCE PRO / LUXURY NIGHTLIFE (Dark & Elegant Arrochadeira/Funk)",
+  "language": "pt-BR",
+  "artist_info": {
+    "name": "Scooby no Beat",
+    "handle": "@scoobynobeat",
+    "tagline": "CACHORRO NA VOZ",
+    "genre": "Arrochadeira / Funk / Paredão",
+    "monthly_listeners": "116.5K",
+    "spotify_artist_id": "7A3PnERPZhRjBkdoWKzc7H",
+    "spotify_embed_url": "https://open.spotify.com/embed/artist/7A3PnERPZhRjBkdoWKzc7H?utm_source=generator&theme=0",
+    "avatar_src": "/artist.jpg",
+    "fallback_avatar_src": "https://images.pexels.com/photos/743715/pexels-photo-743715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "design_exploration_probabilities": [
+    {
+      "name": "Concept 1: Deep Obsidian & Neon Gold Paredão (Selected)",
+      "probability": 0.45,
+      "description": "Tactical dark theme with matte obsidian (#0A0A0E), radiant gold/champagne accents (#F5C518), Spotify emerald pulse (#1DB954), line-by-line staggered text reveals, and high-contrast glass link cards."
+    },
+    {
+      "name": "Concept 2: Swiss Cyberpunk Stage Monolith",
+      "probability": 0.25,
+      "description": "Ultra-bold grid with high contrast black/white typography, kinetic ticker marquee, line borders, and heavy 900 weight condensed headings."
+    },
+    {
+      "name": "Concept 3: Velvet Midnight Scrollytelling",
+      "probability": 0.15,
+      "description": "Rich dark violet/smoke gradient backgrounds, soft gold grain textures, ambient lighting, and interactive discography cards."
+    },
+    {
+      "name": "Concept 4: Neon Club & Subwoofer Vibration",
+      "probability": 0.10,
+      "description": "High energy club strobe aesthetic with audio visualizer animations, equalizer bars, and bold neon cyan/magenta glows."
+    },
+    {
+      "name": "Concept 5: Minimalist Editorial Presskit",
+      "probability": 0.05,
+      "description": "Clean dark editorial layout with high-ratio typography, monochrome imagery, and subtle hover lifts."
+    }
+  ],
+  "colors": {
+    "background_dark": "#0A0A0D",
+    "background_card": "rgba(18, 18, 24, 0.75)",
+    "background_card_hover": "rgba(28, 28, 38, 0.90)",
+    "gold_primary": "#F5C518",
+    "gold_glow": "rgba(245, 197, 24, 0.25)",
+    "spotify_green": "#1DB954",
+    "whatsapp_green": "#25D366",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#9999A1",
+    "text_muted": "#64646E",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_gold": "rgba(245, 197, 24, 0.3)"
+  },
+  "typography": {
+    "heading_font": "'Outfit', 'Cabinet Grotesk', -apple-system, sans-serif",
+    "body_font": "'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif",
+    "accent_font": "'Space Mono', monospace",
+    "h1_hero": "text-4xl sm:text-5xl font-extrabold tracking-tight",
+    "h2_section": "text-2xl sm:text-3xl font-bold tracking-tight",
+    "card_title": "text-lg sm:text-xl font-bold",
+    "badge_text": "text-xs font-semibold uppercase tracking-widest"
+  },
+  "visual_enhancers": {
+    "lenis_scroll": "Smooth momentum scrolling enabled globally via Lenis engine",
+    "hero_reveal": "Masked line-by-line stagger entrance using Framer Motion",
+    "marquee": "Slow kinetic editorial ribbon drifting infinitely at bottom/mid section with taglines",
+    "glassmorphism": "backdrop-blur-xl bg-black/60 border border-white/10 hover:border-amber-400/40 shadow-2xl transition-all duration-300",
+    "hero_card_3d": "Subtle interactive mouse-follow tilt or float effect on artist photo card",
+    "favicon_mark": "Custom inline SVG icon mark with paw + beat wave motif ('Cachorro na Voz')"
+  },
+  "key_sections": [
+    {
+      "id": "header",
+      "description": "Sticky blurred header with SVG mark logo, 'CACHORRO NA VOZ' live badge, and admin access button"
+    },
+    {
+      "id": "hero",
+      "description": "Featured artist photo with gold ring glow, verified check mark, handle @scoobynobeat, monthly listeners counter, and quick social links row"
+    },
+    {
+      "id": "shows_cta",
+      "description": "WhatsApp show booking banner ('CONTRATE PARA SHOWS') with direct message trigger"
+    },
+    {
+      "id": "link_cards",
+      "description": "List of editable high-impact visual image cards (Instagram, TikTok, YouTube, Store, Latest Single)"
+    },
+    {
+      "id": "spotify_embed",
+      "description": "Embedded official Spotify artist player for immediate streaming"
+    },
+    {
+      "id": "discography_strip",
+      "description": "Carousel/Grid of popular tracks ('Cheirinho de Perereca', 'Carro Bicho', 'Uma Hora Dessa', 'Pentão de Robocop', 'Mão no Joelhinho', 'Dia de Revoada')"
+    },
+    {
+      "id": "admin_panel",
+      "description": "Modal/Route at /admin with password authentication, CRUD manager for link cards, reordering, custom stats, and quick save"
+    }
+  ],
+  "image_urls": {
+    "artist_primary": "/artist.jpg",
+    "hero_background": "https://images.unsplash.com/photo-1618176581835-d60e9c2567b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxjb25jZXJ0JTIwc3RhZ2UlMjBsaWdodHMlMjBuaWdodCUyMGNsdWIlMjBkaiUyMHBhcnR5JTIwc3BlYWtlciUyMG5lb258ZW58MHx8fGJsYWNrfDE3OTI3NjcyMTR8MA&ixlib=rb-4.1.0&q=85",
+    "stage_lights": "https://images.pexels.com/photos/13872121/pexels-photo-13872121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "dj_console": "https://images.unsplash.com/photo-1618609377864-68609b857e90?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwzfHxhdWRpbyUyMHNwZWFrZXIlMjBzdWJ3b29mZXIlMjBkaiUyMHN0dWRpbyUyMG5pZ2h0bGlmZSUyMGNsdWIlMjBjcm93ZHxlbnwwfHx8YmxhY2t8MTc5Mjc2NzIyMHww&ixlib=rb-4.1.0&q=85",
+    "club_party": "https://images.pexels.com/photos/19651784/pexels-photo-19651784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "studio_vibe": "https://images.pexels.com/photos/743715/pexels-photo-743715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "testing_attributes": {
+    "header_nav": "data-testid='header-nav'",
+    "admin_button": "data-testid='open-admin-btn'",
+    "artist_avatar": "data-testid='artist-avatar-img'",
+    "verified_badge": "data-testid='artist-verified-badge'",
+    "artist_name": "data-testid='artist-name-title'",
+    "artist_handle": "data-testid='artist-handle-tag'",
+    "monthly_listeners": "data-testid='spotify-listeners-count'",
+    "social_link_spotify": "data-testid='social-link-spotify'",
+    "social_link_instagram": "data-testid='social-link-instagram'",
+    "social_link_youtube": "data-testid='social-link-youtube'",
+    "social_link_tiktok": "data-testid='social-link-tiktok'",
+    "social_link_whatsapp": "data-testid='social-link-whatsapp'",
+    "booking_cta_button": "data-testid='whatsapp-booking-cta-btn'",
+    "link_card": "data-testid='link-card-item'",
+    "spotify_embed_iframe": "data-testid='spotify-artist-embed'",
+    "track_card": "data-testid='track-release-card'",
+    "admin_modal": "data-testid='admin-panel-modal'",
+    "admin_password_input": "data-testid='admin-password-input'",
+    "admin_login_submit": "data-testid='admin-login-btn'",
+    "admin_add_link_btn": "data-testid='admin-add-link-btn'",
+    "admin_save_btn": "data-testid='admin-save-links-btn'"
+  },
+  "instructions_to_main_agent": [
+    "Use pure JavaScript/React (.js/.jsx) - DO NOT add TypeScript types or interfaces.",
+    "Implement Lenis smooth scrolling for high-end momentum feel.",
+    "Ensure dark mode by default with rich obsidian background (#0A0A0D) and gold/emerald highlights.",
+    "Include full CRUD for link-in-bio cards with local storage fallback so changes in /admin persist immediately.",
+    "Use Sonner for user notifications (e.g., link copied, admin login success, link saved).",
+    "Ensure all data-testid attributes listed in testing_attributes are present on interactive elements.",
+    "Ensure responsive layout optimization for mobile viewports while looking cinematic on desktop."
+  ]
+}
