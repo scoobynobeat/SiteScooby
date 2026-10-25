@@ -23,6 +23,7 @@ export const FALLBACK_PAGE = {
     { id: "f4", title: "YouTube", subtitle: "Clipes e visualizers", url: "https://www.youtube.com/@scoobynobeat", image: "/cover_357e0e0d3751687f49399159.jpg", icon: "youtube" },
     { id: "f5", title: "Contrate para shows", subtitle: "Fale direto no WhatsApp", url: "https://wa.me/5500000000000", image: "/cover_3afbbbd197f4702afde49509.jpg", icon: "whatsapp" },
   ],
+  shows: [],
 };
 
 export const RELEASES = [

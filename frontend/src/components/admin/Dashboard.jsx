@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { api, formatApiError } from "@/lib/api";
 import { ProfileEditor } from "./ProfileEditor";
 import { LinkEditor } from "./LinkEditor";
+import { ShowsEditor } from "./ShowsEditor";
 
 const newLink = () => ({ id: crypto.randomUUID(), title: "Novo link", subtitle: "", url: "https://", image: "/artist.jpg", icon: "link" });
 
@@ -58,6 +59,7 @@ export const Dashboard = ({ initial, onLogout }) => {
             onRemove={() => setLinks(links.filter((_, j) => j !== i))} />
         ))}
       </section>
+      <ShowsEditor shows={page.shows} onChange={(s) => setPage({ ...page, shows: s })} />
       <div className="sticky bottom-4 flex justify-end">
         <Button size="lg" onClick={save} disabled={saving} data-testid="admin-save-links-btn" className="rounded-full px-10 shadow-2xl">
           {saving ? "Salvando..." : "Salvar alterações"}

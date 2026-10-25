@@ -59,9 +59,18 @@ class LinkItem(BaseModel):
     icon: str = "link"
 
 
+class ShowItem(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    date: str
+    city: str
+    venue: str = ""
+    ticket_url: str = ""
+
+
 class Page(BaseModel):
     profile: Profile
     links: List[LinkItem]
+    shows: List[ShowItem] = Field(default_factory=list)
     updated_at: Optional[str] = None
 
 

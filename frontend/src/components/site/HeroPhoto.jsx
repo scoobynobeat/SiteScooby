@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from "framer-motion";
 
-const BADGE = "CACHORRO NA VOZ • SCOOBY NO BEAT • ";
+const BADGE = "SCOOBY NO BEAT • SCOOBY NO BEAT • ";
 
 export const HeroPhoto = ({ src, name }) => {
   const mx = useMotionValue(0);
