@@ -21,7 +21,7 @@ export const MaskLine = ({ children, delay = 0, className = "", inView = false }
     ? { whileInView: "show", viewport: { once: true, amount: 0 } }
     : { animate: "show" };
   return (
-    <motion.span className="block overflow-hidden pb-[0.06em]" initial="hidden" {...trigger}>
+    <motion.span className="-mt-[0.15em] block overflow-hidden pb-[0.06em] pt-[0.15em]" initial="hidden" {...trigger}>
       <motion.span className={`block ${className}`} variants={lineVariants} transition={{ duration: 1.1, delay, ease }}>
         {children}
       </motion.span>
