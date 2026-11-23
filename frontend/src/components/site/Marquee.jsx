@@ -1,4 +1,4 @@
-const WORDS = ["Cachorro na voz", "Arrochadeira", "Paredão", "Beat", "Dia de Revoada", "Scooby no Beat"];
+const WORDS = ["Cachorro na voz", "Arrochadeira", "Paredão", "No Beat", "Joga Pro Cachorro", "Scooby no Beat"];
 
 const Row = () => (
   <div className="flex shrink-0 items-center">

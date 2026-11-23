@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from "framer-motion";
 
-const BADGE = "SCOOBY NO BEAT • SCOOBY NO BEAT • ";
+const BADGE = "SCOOBY NO BEAT\u00A0•\u00A0SCOOBY NO BEAT\u00A0•\u00A0";
 
 export const HeroPhoto = ({ src, name }) => {
   const mx = useMotionValue(0);
@@ -39,10 +39,10 @@ export const HeroPhoto = ({ src, name }) => {
         </div>
         <div className="absolute -bottom-8 left-2 h-28 w-28 sm:-left-10 sm:h-32 sm:w-32" style={{ transform: "translateZ(60px)" }}>
           <svg viewBox="0 0 100 100" className="animate-spin-slow h-full w-full">
-            <defs><path id="circle" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" /></defs>
+            <defs><path id="circle" d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0" /></defs>
             <circle cx="50" cy="50" r="49" fill="#F5C518" />
-            <text fontFamily="JetBrains Mono" fontSize="8.4" fontWeight="600" fill="#0A0A0D" letterSpacing="1.2">
-              <textPath href="#circle">{BADGE}</textPath>
+            <text fontFamily="JetBrains Mono" fontSize="9" fontWeight="600" fill="#0A0A0D">
+              <textPath href="#circle" textLength="219.5" lengthAdjust="spacing">{BADGE}</textPath>
             </text>
           </svg>
           <i className="fa-solid fa-paw absolute inset-0 m-auto h-fit w-fit text-2xl text-black" />

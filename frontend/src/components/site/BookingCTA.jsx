@@ -8,7 +8,7 @@ export const BookingCTA = ({ profile }) => (
       <img src="/artist.jpg" alt="" className="absolute right-0 top-0 h-full w-full object-cover opacity-20 grayscale sm:w-1/2" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#111014] via-[#111014]/90 to-transparent" />
       <div className="relative">
-        <SectionLabel index="05" label="Shows & eventos" />
+        <SectionLabel index="04" label="Shows & eventos" />
         <h2 className="font-display mt-6 text-5xl uppercase leading-[0.92] sm:text-7xl lg:text-8xl">
           <MaskLine inView>Bota o Scooby</MaskLine>
           <MaskLine inView delay={0.1}>no seu <span className="text-[color:var(--gold)]">paredão</span></MaskLine>

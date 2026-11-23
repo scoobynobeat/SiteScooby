@@ -8,7 +8,6 @@ import { Marquee } from "@/components/site/Marquee";
 import { LinkCards } from "@/components/site/LinkCards";
 import { SpotifyPlayer } from "@/components/site/SpotifyPlayer";
 import { Releases } from "@/components/site/Releases";
-import { Shows } from "@/components/site/Shows";
 import { BookingCTA } from "@/components/site/BookingCTA";
 import { Footer } from "@/components/site/Footer";
 
@@ -37,7 +36,6 @@ export default function Home() {
         <LinkCards links={page.links} />
         <SpotifyPlayer profile={profile} />
         <Releases />
-        <Shows shows={page.shows} profile={profile} />
         <BookingCTA profile={profile} />
         <Footer profile={profile} />
       </main>
