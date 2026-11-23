@@ -10,10 +10,10 @@ export const BookingCTA = ({ profile }) => (
       <div className="relative">
         <SectionLabel index="04" label="Shows & eventos" />
         <h2 className="font-display mt-6 text-5xl uppercase leading-[0.92] sm:text-7xl lg:text-8xl">
-          <MaskLine inView>Bota o Scooby</MaskLine>
+          <MaskLine inView>Scooby</MaskLine>
           <MaskLine inView delay={0.1}>no seu <span className="text-[color:var(--gold)]">evento</span></MaskLine>
         </h2>
-        <p className="mt-6 max-w-md text-zinc-300">Festas, casas de show, eventos e paredões. Chama no WhatsApp e garante a data.</p>
+        <p className="mt-6 max-w-md text-zinc-300">Casas de Shows e eventos. Chama no WhatsApp e garante a data.</p>
         <motion.a
           href={whatsappHref(profile)}
           target="_blank"
