@@ -13,7 +13,7 @@ export const BookingCTA = ({ profile }) => (
           <MaskLine inView>Scooby</MaskLine>
           <MaskLine inView delay={0.1}>no seu <span className="text-[color:var(--gold)]">evento</span></MaskLine>
         </h2>
-        <p className="mt-6 max-w-md text-zinc-300">Casas de Shows e eventos. Chama no WhatsApp e garante a data.</p>
+        <p className="mt-6 max-w-md text-zinc-300">Casas de shows e eventos. Chama no WhatsApp e garante a data.</p>
         <motion.a
           href={whatsappHref(profile)}
           target="_blank"
