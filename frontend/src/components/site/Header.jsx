@@ -4,8 +4,7 @@ export const Header = ({ profile }) => (
   <header data-testid="header-nav" className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-[#0A0A0D]/60 backdrop-blur-xl">
     <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
       <a href="#topo" data-testid="header-logo-link" className="flex items-center gap-3">
-        <LogoMark className="h-9 w-9" />
-        <span className="font-display text-lg uppercase tracking-wide">{profile?.name}</span>
+        <LogoMark className="h-9 w-auto" />
       </a>
       <a
         href={profile?.socials?.spotify || "#"}
