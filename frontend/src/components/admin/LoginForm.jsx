@@ -27,7 +27,7 @@ export const LoginForm = ({ onLogin }) => {
 
   return (
     <form onSubmit={submit} data-testid="admin-panel-modal" className="mx-auto w-full max-w-sm space-y-5 rounded-[1.75rem] border border-white/10 bg-zinc-950 p-8">
-      <LogoMark className="h-12 w-auto" />
+      <LogoMark className="mx-auto block h-12 w-auto" />
       <h1 className="font-display text-4xl uppercase">Área do artista</h1>
       <div className="space-y-2">
         <Label htmlFor="email">Usuário</Label>
