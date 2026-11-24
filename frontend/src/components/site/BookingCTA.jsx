@@ -24,7 +24,7 @@ export const BookingCTA = ({ profile }) => (
           className="mt-10 inline-flex items-center gap-4 rounded-full bg-[#25D366] py-3 pl-3 pr-8 text-lg font-semibold text-black"
         >
           <span className="grid h-12 w-12 place-items-center rounded-full bg-black text-2xl text-[#25D366]"><i className="fa-brands fa-whatsapp" /></span>
-          Contratar pelo WhatsApp
+          Contato pelo WhatsApp
         </motion.a>
       </div>
     </div>
