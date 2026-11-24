@@ -19,7 +19,7 @@ export const SITE = {
     marquee_words: ["Cachorro na voz", "Arrochadeira", "Paredão", "No Beat", "Joga Pro Cachorro", "Scooby no Beat"],
   },
   links: [
-    { id: "l1", title: "Dia de Revoada", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/album/3wqwvczpjhixMYHBXynIsY", image: "/link_spotify.jpg", icon: "spotify" },
+    { id: "l1", title: "Mão no Joelhinho", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/album/6NFkldRfD1JVvseeCIXYzf", image: "/cover_mao_joelhinho.jpg", icon: "spotify" },
     { id: "l2", title: "Instagram", subtitle: "Bastidores, shows e novidades", url: "https://www.instagram.com/scoobynobeat", image: "/artist.jpg", icon: "instagram" },
     { id: "l3", title: "TikTok", subtitle: "As trends do paredão", url: "https://www.tiktok.com/@scoobynobeat", image: "/link_tiktok.jpg", icon: "tiktok" },
     { id: "l4", title: "YouTube", subtitle: "Clipes e visualizers", url: "https://www.youtube.com/@scoobynobeat", image: "/link_youtube.jpg", icon: "youtube" },
