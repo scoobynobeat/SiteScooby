@@ -1,33 +1,38 @@
-export const FALLBACK_PAGE = {
+export const SITE = {
   profile: {
     name: "Scooby no Beat",
     handle: "@scoobynobeat",
-    tagline: "Cachorro na voz",
-    bio: "Arrochadeira, funk e paredão. O som que faz o carro tremer.",
-    listeners: "116,5 mil",
+    tagline: "Joga pro cahorro",
+    bio: "",
+    listeners: "120,5 mil",
     avatar: "/artist.jpg",
     spotify_artist_id: "7A3PnERPZhRjBkdoWKzc7H",
-    whatsapp_message: "Olá Scooby! Quero contratar um show.",
-    booking_label: "Contratar show",
-    booking_url: "",
+    whatsapp_message: "Olá Barreto! Quero contratar um show de Scooby no Beat.",
+    booking_label: "Contato para Shows",
     socials: {
       spotify: "https://open.spotify.com/artist/7A3PnERPZhRjBkdoWKzc7H",
       instagram: "https://www.instagram.com/scoobynobeat",
       youtube: "https://www.youtube.com/@scoobynobeat",
       tiktok: "https://www.tiktok.com/@scoobynobeat",
-      whatsapp: "https://wa.me/5500000000000",
+      whatsapp: "https://wa.me/5573982260592",
     },
     marquee_words: ["Cachorro na voz", "Arrochadeira", "Paredão", "No Beat", "Joga Pro Cachorro", "Scooby no Beat"],
   },
   links: [
-    { id: "f1", title: "Dia de Revoada", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/album/3wqwvczpjhixMYHBXynIsY", image: "/cover_5d8514e265b55540d7fd1912.jpg", icon: "spotify" },
-    { id: "f2", title: "Instagram", subtitle: "Bastidores, shows e novidades", url: "https://www.instagram.com/scoobynobeat", image: "/artist.jpg", icon: "instagram" },
-    { id: "f3", title: "TikTok", subtitle: "As trends do paredão", url: "https://www.tiktok.com/@scoobynobeat", image: "/cover_4f70579dc81f13a09f5e3e8c.jpg", icon: "tiktok" },
-    { id: "f4", title: "YouTube", subtitle: "Clipes e visualizers", url: "https://www.youtube.com/@scoobynobeat", image: "/cover_357e0e0d3751687f49399159.jpg", icon: "youtube" },
-    { id: "f5", title: "Contrate para shows", subtitle: "Fale direto no WhatsApp", url: "https://wa.me/5500000000000", image: "/cover_3afbbbd197f4702afde49509.jpg", icon: "whatsapp" },
+    { id: "l1", title: "Dia de Revoada", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/album/3wqwvczpjhixMYHBXynIsY", image: "/link_spotify.jpg", icon: "spotify" },
+    { id: "l2", title: "Instagram", subtitle: "Bastidores, shows e novidades", url: "https://www.instagram.com/scoobynobeat", image: "/artist.jpg", icon: "instagram" },
+    { id: "l3", title: "TikTok", subtitle: "As trends do paredão", url: "https://www.tiktok.com/@scoobynobeat", image: "/link_tiktok.jpg", icon: "tiktok" },
+    { id: "l4", title: "YouTube", subtitle: "Clipes e visualizers", url: "https://www.youtube.com/@scoobynobeat", image: "/link_youtube.jpg", icon: "youtube" },
+    { id: "l5", title: "Contrate para shows", subtitle: "Fale direto no WhatsApp", url: "https://wa.me/5573982260592?text=Ol%C3%A1%20Barreto!%20Quero%20contratar%20um%20show%20de%20Scooby%20no%20Beat.", image: "/link_whatsapp.webp", icon: "whatsapp" },
   ],
-  shows: [],
 };
+
+export function whatsappHref(profile) {
+  const base = profile?.socials?.whatsapp || "";
+  if (!base) return "#";
+  const msg = profile?.whatsapp_message;
+  return msg ? `${base}?text=${encodeURIComponent(msg)}` : base;
+}
 
 export const RELEASES = [
   { title: "Dia de Revoada", meta: "Single • Novo", cover: "/cover_5d8514e265b55540d7fd1912.jpg", url: "https://open.spotify.com/album/3wqwvczpjhixMYHBXynIsY" },

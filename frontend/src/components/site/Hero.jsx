@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MaskLine } from "./Reveal";
 import { HeroPhoto } from "./HeroPhoto";
 import { SocialRow } from "./SocialRow";
-import { whatsappHref } from "@/lib/api";
+import { whatsappHref } from "@/data/fallback";
 
 const fade = (delay) => ({ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.8, delay } });
 

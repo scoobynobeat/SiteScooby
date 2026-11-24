@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { MaskLine, SectionLabel } from "./Reveal";
-import { whatsappHref } from "@/lib/api";
+import { whatsappHref } from "@/data/fallback";
 
 export const BookingCTA = ({ profile }) => (
   <section id="shows" className="relative mx-auto max-w-7xl overflow-hidden px-5 py-28 sm:px-8">

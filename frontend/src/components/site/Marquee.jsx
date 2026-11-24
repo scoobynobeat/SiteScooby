@@ -1,4 +1,4 @@
-import { FALLBACK_PAGE } from "@/data/fallback";
+import { SITE } from "@/data/fallback";
 
 const Row = ({ words }) => (
   <div className="flex shrink-0 items-center">
@@ -13,7 +13,7 @@ const Row = ({ words }) => (
 
 export const Marquee = ({ words }) => {
   const list = (Array.isArray(words) ? words : []).filter((w) => w?.trim());
-  const items = list.length ? list : FALLBACK_PAGE.profile.marquee_words;
+  const items = list.length ? list : SITE.profile.marquee_words;
   return (
     <div data-testid="editorial-marquee" className="relative -rotate-2 border-y border-[color:var(--gold)]/30 bg-[#0d0d11] py-6">
       <div className="animate-marquee flex w-max">

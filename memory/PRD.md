@@ -2,24 +2,18 @@
 
 ## Original problem statement
 "Crie um site estilo esse https://link.me/bru_luccas ... eu sou artista sou cantor meu spotify é esse https://open.spotify.com/intl-pt/artist/7A3PnERPZhRjBkdoWKzc7H crie para me"
-Choices: Spotify + Instagram + YouTube + TikTok + WhatsApp (shows); admin panel with password; embedded Spotify player; dark & elegant with photo; name "Scooby no Beat", @scoobynobeat.
+Later: "Remova toda a parte de backend do projeto, incluindo o servidor e a página de admin/painel do artista. Deixe o site como frontend estático, com as informações do artista fixas diretamente no código."
 
-## Architecture
-- FastAPI + MongoDB: `page` collection (singleton key=main: profile + links), `users` (admin, bcrypt), `login_attempts`. JWT httpOnly cookies.
-- Endpoints: GET /api/page, PUT /api/page (admin), POST /api/page/reset (admin), /api/auth/login|me|logout
-- React: Home (Hero, Marquee, LinkCards bento, SpotifyPlayer, Releases, BookingCTA), /admin (login + dashboard). Lenis + framer-motion. Self-hosted fonts (Anton, Bricolage Grotesque, JetBrains Mono) + FontAwesome.
+## Architecture (2026-11-24)
+- Static React frontend only. All content in `frontend/src/data/fallback.js` (SITE profile + links, RELEASES, ICONS).
+- Images saved in `frontend/public` (artist.jpg, covers, link_*.jpg/webp, logo.png, favicon.png).
+- Backend server, admin panel and login removed. /admin redirects to /.
 
-## Personas
-- Fans (visit links, listen); contractors (book via WhatsApp); artist (edits via /admin).
-
-## Implemented (2026-10-23)
-- Full landing/link-in-bio page, mobile-first, admin CRUD for profile/social/links with reorder, saved to DB.
-- Artist photo + covers downloaded from Spotify into /public.
-
-## Placeholders
-- WhatsApp number: https://wa.me/5500000000000
-- Instagram/TikTok/YouTube URLs assumed @scoobynobeat
+## Implemented
+- 2026-10-23: MVP link-in-bio (hero, marquee, link cards, Spotify embed, releases, WhatsApp CTA) + admin panel
+- Following iterations: user logo, copy edits, marquee words, booking label
+- 2026-11-24: backend + admin removed; content hardcoded
 
 ## Backlog
-- P1: image upload in admin (instead of URL), click analytics per link
-- P2: agenda de shows, YouTube video embeds, password change in admin
+- P1: share button, YouTube video embeds
+- P2: fix tagline typo "cahorro" if desired
