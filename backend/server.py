@@ -169,7 +169,7 @@ async def login(body: LoginBody, request: Request, response: Response):
         if count >= 5:
             update = {"identifier": ident, "count": 0, "locked_until": now + timedelta(minutes=15)}
         await db.login_attempts.update_one({"identifier": ident}, {"$set": update}, upsert=True)
-        raise HTTPException(401, "E-mail ou senha incorretos")
+        raise HTTPException(401, "Usuário ou senha incorretos")
     await db.login_attempts.delete_many({"identifier": ident})
     set_auth_cookies(response, str(user["_id"]), email)
     return {"id": str(user["_id"]), "email": email, "role": user.get("role", "admin")}

@@ -30,8 +30,8 @@ export const LoginForm = ({ onLogin }) => {
       <LogoMark className="h-12 w-auto" />
       <h1 className="font-display text-4xl uppercase">Área do artista</h1>
       <div className="space-y-2">
-        <Label htmlFor="email">E-mail</Label>
-        <Input id="email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} data-testid="admin-email-input" />
+        <Label htmlFor="email">Usuário</Label>
+        <Input id="email" type="text" autoCapitalize="none" autoComplete="username" required value={email} onChange={(e) => setEmail(e.target.value)} data-testid="admin-email-input" />
       </div>
       <div className="space-y-2">
         <Label htmlFor="password">Senha</Label>
