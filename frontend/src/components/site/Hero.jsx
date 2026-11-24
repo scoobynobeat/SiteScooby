@@ -34,8 +34,8 @@ export const Hero = ({ profile }) => {
           <a href="#ouvir" data-testid="hero-listen-btn" className="group flex flex-1 items-center justify-center gap-3 whitespace-nowrap rounded-full sm:flex-none bg-[color:var(--gold)] px-6 py-4 font-semibold text-black transition-transform duration-300 hover:-translate-y-1">
             <i className="fa-solid fa-play" /> Ouvir agora
           </a>
-          <a href={whatsappHref(profile)} target="_blank" rel="noreferrer" data-testid="hero-booking-btn" className="flex flex-1 items-center justify-center gap-3 whitespace-nowrap rounded-full border border-white/20 px-6 py-4 sm:flex-none font-semibold transition-colors duration-300 hover:border-[#25D366] hover:text-[#25D366]">
-            <i className="fa-brands fa-whatsapp" /> Contratar show
+          <a href={profile?.booking_url || whatsappHref(profile)} target="_blank" rel="noreferrer" data-testid="hero-booking-btn" className="flex flex-1 items-center justify-center gap-3 whitespace-nowrap rounded-full border border-white/20 px-6 py-4 sm:flex-none font-semibold transition-colors duration-300 hover:border-[#25D366] hover:text-[#25D366]">
+            <i className="fa-brands fa-whatsapp" /> {profile?.booking_label || "Contratar show"}
           </a>
         </motion.div>
       </div>

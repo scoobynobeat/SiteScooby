@@ -50,6 +50,8 @@ class Profile(BaseModel):
     avatar: str = ""
     spotify_artist_id: str = ""
     whatsapp_message: str = ""
+    booking_label: str = "Contratar show"
+    booking_url: str = ""
     socials: Socials = Field(default_factory=Socials)
     marquee_words: List[str] = Field(default_factory=lambda: list(DEFAULT_MARQUEE))
 

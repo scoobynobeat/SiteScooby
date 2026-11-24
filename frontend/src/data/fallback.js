@@ -8,6 +8,8 @@ export const FALLBACK_PAGE = {
     avatar: "/artist.jpg",
     spotify_artist_id: "7A3PnERPZhRjBkdoWKzc7H",
     whatsapp_message: "Olá Scooby! Quero contratar um show.",
+    booking_label: "Contratar show",
+    booking_url: "",
     socials: {
       spotify: "https://open.spotify.com/artist/7A3PnERPZhRjBkdoWKzc7H",
       instagram: "https://www.instagram.com/scoobynobeat",

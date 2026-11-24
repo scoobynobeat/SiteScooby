@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { ICONS } from "@/data/fallback";
-import { whatsappHref } from "@/lib/api";
 
-const KEYS = ["spotify", "instagram", "youtube", "tiktok", "whatsapp"];
+const KEYS = ["spotify", "instagram", "youtube", "tiktok"];
 
 export const SocialRow = ({ profile }) => {
   const socials = profile?.socials ?? {};
@@ -11,7 +10,7 @@ export const SocialRow = ({ profile }) => {
       {KEYS.filter((k) => socials[k]).map((k, i) => (
         <motion.a
           key={k}
-          href={k === "whatsapp" ? whatsappHref(profile) : socials[k]}
+          href={socials[k]}
           target="_blank"
           rel="noreferrer"
           aria-label={k}
