@@ -32,7 +32,7 @@ export default function Home() {
       <main data-testid="home-page" className="relative overflow-x-clip bg-[#0A0A0D] text-white">
         <Header profile={profile} />
         <Hero profile={profile} />
-        <Marquee />
+        <Marquee words={profile?.marquee_words} />
         <LinkCards links={page.links} />
         <SpotifyPlayer profile={profile} />
         <Releases />

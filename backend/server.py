@@ -30,6 +30,9 @@ JWT_ALGORITHM = "HS256"
 
 
 # ---------- Models ----------
+DEFAULT_MARQUEE = ["Cachorro na voz", "Arrochadeira", "Paredão", "No Beat", "Joga Pro Cachorro", "Scooby no Beat"]
+
+
 class Socials(BaseModel):
     spotify: str = ""
     instagram: str = ""
@@ -48,6 +51,7 @@ class Profile(BaseModel):
     spotify_artist_id: str = ""
     whatsapp_message: str = ""
     socials: Socials = Field(default_factory=Socials)
+    marquee_words: List[str] = Field(default_factory=lambda: list(DEFAULT_MARQUEE))
 
 
 class LinkItem(BaseModel):

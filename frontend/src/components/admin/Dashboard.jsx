@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { api, formatApiError } from "@/lib/api";
 import { ProfileEditor } from "./ProfileEditor";
 import { LinkEditor } from "./LinkEditor";
+import { MarqueeEditor } from "./MarqueeEditor";
 
 const newLink = () => ({ id: crypto.randomUUID(), title: "Novo link", subtitle: "", url: "https://", image: "/artist.jpg", icon: "link" });
 
@@ -46,6 +47,7 @@ export const Dashboard = ({ initial, onLogout }) => {
         <h2 className="text-lg font-semibold text-[color:var(--gold)]">Perfil e redes</h2>
         <ProfileEditor profile={page.profile} onChange={(p) => setPage({ ...page, profile: p })} />
       </section>
+      <MarqueeEditor words={page.profile.marquee_words} onChange={(w) => setPage({ ...page, profile: { ...page.profile, marquee_words: w } })} />
       <section className="space-y-4">
         <div className="flex items-center justify-between">
           <h2 className="text-lg font-semibold text-[color:var(--gold)]">Links ({links.length})</h2>

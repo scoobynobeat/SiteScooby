@@ -15,6 +15,7 @@ export const FALLBACK_PAGE = {
       tiktok: "https://www.tiktok.com/@scoobynobeat",
       whatsapp: "https://wa.me/5500000000000",
     },
+    marquee_words: ["Cachorro na voz", "Arrochadeira", "Paredão", "No Beat", "Joga Pro Cachorro", "Scooby no Beat"],
   },
   links: [
     { id: "f1", title: "Dia de Revoada", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/album/3wqwvczpjhixMYHBXynIsY", image: "/cover_5d8514e265b55540d7fd1912.jpg", icon: "spotify" },
