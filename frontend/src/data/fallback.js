@@ -2,7 +2,7 @@ export const SITE = {
   profile: {
     name: "Scooby no Beat",
     handle: "@scoobynobeat",
-    tagline: "Joga pro cahorro",
+    tagline: "Joga pro cachorro",
     bio: "",
     listeners: "120,5 mil",
     avatar: "/artist.jpg",
