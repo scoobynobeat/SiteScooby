@@ -5,7 +5,7 @@ const FIELDS = [
   ["name", "Nome artístico"], ["handle", "@ (usuário)"], ["tagline", "Frase de destaque"],
   ["bio", "Bio curta"], ["listeners", "Ouvintes mensais"], ["spotify_artist_id", "ID do artista no Spotify"],
   ["whatsapp_message", "Mensagem padrão do WhatsApp"],
-  ["booking_label", "Texto do botão \"Contratar show\""], ["booking_url", "Link do botão (vazio = WhatsApp)"],
+  ["booking_label", "Texto do botão \"Contratar show\""],
 ];
 const SOCIALS = [["spotify", "Spotify"], ["instagram", "Instagram"], ["youtube", "YouTube"], ["tiktok", "TikTok"], ["whatsapp", "WhatsApp (https://wa.me/55DDDNUMERO)"]];
 
