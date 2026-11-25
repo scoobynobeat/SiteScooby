@@ -17,7 +17,7 @@ export const SITE = {
       tiktok: "https://www.tiktok.com/@scoobynobeat",
       whatsapp: "https://wa.me/5573982260592",
     },
-    marquee_words: ["Cachorro na voz", "Arrochadeira", "Paredão", "No Beat", "Joga Pro Cachorro", "Scooby no Beat"],
+    marquee_words: ["Cachorro na voz", "Arrochafunk", "Paredão", "No Beat", "Joga Pro Cachorro", "Scooby no Beat"],
   },
   links: [
     { id: "l1", title: "Mão no Joelhinho", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/album/6NFkldRfD1JVvseeCIXYzf", image: "/cover_mao_joelhinho.webp", icon: "spotify" },
