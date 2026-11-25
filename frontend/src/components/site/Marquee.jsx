@@ -1,4 +1,3 @@
-import { SITE } from "@/data/fallback";
 import { Icon } from "./Icon";
 
 const Row = ({ words }) => (
@@ -12,15 +11,11 @@ const Row = ({ words }) => (
   </div>
 );
 
-export const Marquee = ({ words }) => {
-  const list = (Array.isArray(words) ? words : []).filter((w) => w?.trim());
-  const items = list.length ? list : SITE.profile.marquee_words;
-  return (
-    <div data-testid="editorial-marquee" className="relative -rotate-2 border-y border-[color:var(--gold)]/30 bg-[#0d0d11] py-6">
-      <div className="animate-marquee flex w-max">
-        <Row words={items} />
-        <Row words={items} />
-      </div>
+export const Marquee = ({ words }) => (
+  <div data-testid="editorial-marquee" className="relative -rotate-2 border-y border-[color:var(--gold)]/30 bg-[#0d0d11] py-6">
+    <div className="animate-marquee flex w-max">
+      <Row words={words} />
+      <Row words={words} />
     </div>
-  );
-};
+  </div>
+);

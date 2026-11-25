@@ -4,10 +4,10 @@ import { Icon } from "./Icon";
 const KEYS = ["spotify", "instagram", "youtube", "tiktok"];
 
 export const SocialRow = ({ profile }) => {
-  const socials = profile?.socials ?? {};
+  const socials = profile.socials;
   return (
     <div className="flex flex-wrap gap-3">
-      {KEYS.filter((k) => socials[k]).map((k, i) => (
+      {KEYS.map((k, i) => (
         <motion.a
           key={k}
           href={socials[k]}

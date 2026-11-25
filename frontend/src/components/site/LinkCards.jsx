@@ -18,7 +18,7 @@ const Card = ({ link, i, total }) => (
     whileTap={{ scale: 0.98 }}
     className={`group relative block aspect-[4/3] overflow-hidden rounded-[1.75rem] border border-white/10 bg-zinc-900 ${spanFor(i, total)}`}
   >
-    <motion.img src={link.image || "/artist.webp"} alt={link.title} loading="lazy" decoding="async" variants={{ hover: { scale: 1.08 } }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="absolute inset-0 h-full w-full object-cover" />
+    <motion.img src={link.image} alt={link.title} loading="lazy" decoding="async" variants={{ hover: { scale: 1.08 } }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="absolute inset-0 h-full w-full object-cover" />
     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/5" />
     <div className="absolute left-5 top-5 grid h-11 w-11 place-items-center rounded-full bg-black/60 text-lg backdrop-blur-xl">
       <Icon name={link.icon} />
@@ -36,8 +36,7 @@ const Card = ({ link, i, total }) => (
   </motion.a>
 );
 
-export const LinkCards = ({ links }) => {
-  const items = Array.isArray(links) ? links : [];
+export const LinkCards = ({ links: items }) => {
   return (
     <section id="links" className="mx-auto max-w-5xl px-5 py-28 sm:px-8">
       <SectionLabel index="01" label="Links oficiais" />
@@ -47,7 +46,7 @@ export const LinkCards = ({ links }) => {
       </h2>
       <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
         {items.map((l, i) => (
-          <Reveal key={l.id || i} delay={(i % 2) * 0.08} className={spanFor(i, items.length).includes("col-span-2") ? "sm:col-span-2" : ""}>
+          <Reveal key={l.id} delay={(i % 2) * 0.08} className={spanFor(i, items.length).includes("col-span-2") ? "sm:col-span-2" : ""}>
             <Card link={l} i={i} total={items.length} />
           </Reveal>
         ))}

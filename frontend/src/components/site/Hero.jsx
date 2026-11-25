@@ -32,12 +32,12 @@ export const Hero = ({ profile }) => {
             <Icon name="play" /> Ouvir agora
           </a>
           <a href={whatsappHref(profile)} target="_blank" rel="noreferrer" data-testid="hero-booking-btn" className="flex flex-1 items-center justify-center gap-3 whitespace-nowrap rounded-full border border-white/20 px-6 py-4 sm:flex-none font-semibold transition-colors duration-300 hover:border-[#25D366] hover:text-[#25D366]">
-            <Icon name="whatsapp" /> {profile?.booking_label || "Contratar show"}
+            <Icon name="whatsapp" /> {profile.booking_label}
           </a>
         </motion.div>
       </div>
       <div className="order-1 lg:order-2 lg:col-span-5">
-        <HeroPhoto src={profile?.avatar || "/artist.webp"} name={profile?.name} />
+        <HeroPhoto src={profile.avatar} name={profile.name} />
       </div>
     </section>
   );
