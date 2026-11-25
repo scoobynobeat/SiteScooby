@@ -24,9 +24,6 @@ export const Hero = ({ profile }) => {
           <span data-testid="artist-verified-badge" className="flex items-center gap-1.5 rounded-full bg-[color:var(--gold)]/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-[color:var(--gold)]">
             <i className="fa-solid fa-circle-check" /> Verificado
           </span>
-          <span data-testid="spotify-listeners-count" className="font-mono-accent text-sm text-zinc-300">
-            <b className="text-white">{profile?.listeners}</b> ouvintes mensais
-          </span>
         </motion.div>
         <motion.p {...fade(1)} className="mt-6 max-w-md text-base text-zinc-300 sm:text-lg">{profile?.bio}</motion.p>
         <div className="mt-8"><SocialRow profile={profile} /></div>
