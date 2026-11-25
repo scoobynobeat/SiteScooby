@@ -40,7 +40,7 @@ export const Hero = ({ profile }) => {
         </motion.div>
       </div>
       <div className="order-1 lg:order-2 lg:col-span-5">
-        <HeroPhoto src={profile?.avatar || "/artist.jpg"} name={profile?.name} />
+        <HeroPhoto src={profile?.avatar || "/artist.webp"} name={profile?.name} />
       </div>
     </section>
   );

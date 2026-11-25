@@ -7,7 +7,7 @@ export const SITE = {
     tagline: "Joga pro cachorro",
     bio: "",
     listeners: "120,5 mil",
-    avatar: "/artist.jpg",
+    avatar: "/artist.webp",
     spotify_artist_id: "7A3PnERPZhRjBkdoWKzc7H",
     whatsapp_message: "Olá Barreto! Quero contratar um show de Scooby no Beat.",
     booking_label: "Contato para Shows",
@@ -21,10 +21,10 @@ export const SITE = {
     marquee_words: ["Cachorro na voz", "Arrochadeira", "Paredão", "No Beat", "Joga Pro Cachorro", "Scooby no Beat"],
   },
   links: [
-    { id: "l1", title: "Mão no Joelhinho", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/album/6NFkldRfD1JVvseeCIXYzf", image: "/cover_mao_joelhinho.jpg", icon: "spotify" },
-    { id: "l2", title: "Instagram", subtitle: "Bastidores, shows e novidades", url: "https://www.instagram.com/scoobynobeat", image: "/artist.jpg", icon: "instagram" },
-    { id: "l3", title: "TikTok", subtitle: "As trends do paredão", url: "https://www.tiktok.com/@scoobynobeat", image: "/link_tiktok.jpg", icon: "tiktok" },
-    { id: "l4", title: "YouTube", subtitle: "Clipes e visualizers", url: "https://www.youtube.com/@scoobynobeat", image: "/link_youtube.jpg", icon: "youtube" },
+    { id: "l1", title: "Mão no Joelhinho", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/album/6NFkldRfD1JVvseeCIXYzf", image: "/cover_mao_joelhinho.webp", icon: "spotify" },
+    { id: "l2", title: "Instagram", subtitle: "Bastidores, shows e novidades", url: "https://www.instagram.com/scoobynobeat", image: "/artist.webp", icon: "instagram" },
+    { id: "l3", title: "TikTok", subtitle: "As trends do paredão", url: "https://www.tiktok.com/@scoobynobeat", image: "/link_tiktok.webp", icon: "tiktok" },
+    { id: "l4", title: "YouTube", subtitle: "Clipes e visualizers", url: "https://www.youtube.com/@scoobynobeat", image: "/link_youtube.webp", icon: "youtube" },
     { id: "l5", title: "Contrate para shows", subtitle: "Fale direto no WhatsApp", url: "https://wa.me/5573982260592?text=Ol%C3%A1%20Barreto!%20Quero%20contratar%20um%20show%20de%20Scooby%20no%20Beat.", image: "/link_whatsapp.webp", icon: "whatsapp" },
   ],
 };

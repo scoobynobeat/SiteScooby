@@ -18,7 +18,7 @@ const Card = ({ link, i, total }) => (
     whileTap={{ scale: 0.98 }}
     className={`group relative block aspect-[4/3] overflow-hidden rounded-[1.75rem] border border-white/10 bg-zinc-900 ${spanFor(i, total)}`}
   >
-    <motion.img src={link.image || "/artist.jpg"} alt={link.title} variants={{ hover: { scale: 1.08 } }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="absolute inset-0 h-full w-full object-cover" />
+    <motion.img src={link.image || "/artist.webp"} alt={link.title} loading="lazy" decoding="async" variants={{ hover: { scale: 1.08 } }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="absolute inset-0 h-full w-full object-cover" />
     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/5" />
     <div className="absolute left-5 top-5 grid h-11 w-11 place-items-center rounded-full bg-black/60 text-lg backdrop-blur-xl">
       <i className={ICONS[link.icon] || ICONS.link} />
