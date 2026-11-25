@@ -34,15 +34,6 @@ export function whatsappHref(profile) {
   return msg ? `${base}?text=${encodeURIComponent(msg)}` : base;
 }
 
-export const RELEASES = [
-  { title: "Dia de Revoada", meta: "Single • Novo", cover: "/cover_5d8514e265b55540d7fd1912.jpg", url: "https://open.spotify.com/album/3wqwvczpjhixMYHBXynIsY" },
-  { title: "Cheirinho de Perereca", meta: "Single • 2024", cover: "/cover_357e0e0d3751687f49399159.jpg", url: "https://open.spotify.com/album/1YqXfRfq3BKaYSrpUKaxud" },
-  { title: "Carro Bicho", meta: "Single • 2025", cover: "/cover_4f70579dc81f13a09f5e3e8c.jpg", url: "https://open.spotify.com/album/54XzAiGPIyqDZmaJpWtmfU" },
-  { title: "Uma Hora Dessa", meta: "Single • 2025", cover: "/cover_3afbbbd197f4702afde49509.jpg", url: "https://open.spotify.com/album/26SVVlsHgrNF4DT6QfyP4K" },
-  { title: "Mão no Joelhinho", meta: "Single • 2026", cover: "/cover_fb299efd4014683441366495.jpg", url: "https://open.spotify.com/album/6NFkldRfD1JVvseeCIXYzf" },
-  { title: "De Outro Mundo", meta: "EP • 2025", cover: "/cover_1743032675b9bbfd3d63fb66.jpg", url: "https://open.spotify.com/album/43GnAmWk3W454MrDMGiBrB" },
-];
-
 export const ICONS = {
   spotify: "fa-brands fa-spotify",
   instagram: "fa-brands fa-instagram",

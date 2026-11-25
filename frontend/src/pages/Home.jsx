@@ -5,7 +5,6 @@ import { Hero } from "@/components/site/Hero";
 import { Marquee } from "@/components/site/Marquee";
 import { LinkCards } from "@/components/site/LinkCards";
 import { SpotifyPlayer } from "@/components/site/SpotifyPlayer";
-import { Releases } from "@/components/site/Releases";
 import { BookingCTA } from "@/components/site/BookingCTA";
 import { Footer } from "@/components/site/Footer";
 
@@ -19,7 +18,6 @@ export default function Home() {
         <Marquee words={profile.marquee_words} />
         <LinkCards links={links} />
         <SpotifyPlayer profile={profile} />
-        <Releases />
         <BookingCTA profile={profile} />
         <Footer profile={profile} />
       </main>
