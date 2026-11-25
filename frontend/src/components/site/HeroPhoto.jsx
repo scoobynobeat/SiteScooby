@@ -1,4 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from "framer-motion";
+import { Icon } from "./Icon";
 
 const BADGE = "SCOOBY NO BEAT\u00A0•\u00A0SCOOBY NO BEAT\u00A0•\u00A0";
 
@@ -45,7 +46,7 @@ export const HeroPhoto = ({ src, name }) => {
               <textPath href="#circle" textLength="219.5" lengthAdjust="spacing">{BADGE}</textPath>
             </text>
           </svg>
-          <i className="fa-solid fa-paw absolute inset-0 m-auto h-fit w-fit text-2xl text-black" />
+          <Icon name="paw" className="absolute inset-0 m-auto text-2xl text-black" />
         </div>
       </motion.div>
     </div>

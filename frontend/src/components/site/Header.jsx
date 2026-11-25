@@ -1,4 +1,5 @@
 import { LogoMark } from "./Logo";
+import { Icon } from "./Icon";
 import { shareHref } from "@/data/fallback";
 
 const pill = "font-mono-accent flex items-center gap-2 rounded-full border border-white/15 bg-black/50 px-4 py-2 text-xs uppercase tracking-widest backdrop-blur-xl transition-colors duration-300";
@@ -18,7 +19,7 @@ export const Header = ({ profile }) => (
         data-testid="header-share-btn"
         className={`${pill} hover:border-[#25D366] hover:text-[#25D366]`}
       >
-        <i className="fa-brands fa-whatsapp" /> Compartilhar
+        <Icon name="whatsapp" /> Compartilhar
       </a>
       <a
         href={profile?.socials?.spotify || "#"}
@@ -27,7 +28,7 @@ export const Header = ({ profile }) => (
         data-testid="header-listen-btn"
         className={`${pill} hover:border-[color:var(--gold)] hover:text-[color:var(--gold)]`}
       >
-        <i className="fa-brands fa-spotify text-[#1DB954]" /> Ouvir
+        <Icon name="spotify" className="text-[#1DB954]" /> Ouvir
       </a>
       </div>
     </div>

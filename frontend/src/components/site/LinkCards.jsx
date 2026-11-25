@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ICONS } from "@/data/fallback";
+import { Icon } from "./Icon";
 import { Reveal, SectionLabel, MaskLine } from "./Reveal";
 
 const spanFor = (i, total) => {
@@ -21,7 +21,7 @@ const Card = ({ link, i, total }) => (
     <motion.img src={link.image || "/artist.webp"} alt={link.title} loading="lazy" decoding="async" variants={{ hover: { scale: 1.08 } }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="absolute inset-0 h-full w-full object-cover" />
     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/5" />
     <div className="absolute left-5 top-5 grid h-11 w-11 place-items-center rounded-full bg-black/60 text-lg backdrop-blur-xl">
-      <i className={ICONS[link.icon] || ICONS.link} />
+      <Icon name={link.icon} />
     </div>
     <span className="font-mono-accent absolute right-6 top-6 text-xs text-zinc-300">{String(i + 1).padStart(2, "0")}</span>
     <div className="absolute inset-x-5 bottom-5 flex items-end justify-between gap-4 sm:inset-x-7 sm:bottom-7">
@@ -30,7 +30,7 @@ const Card = ({ link, i, total }) => (
         {link.subtitle && <p className="mt-2 text-sm text-zinc-300">{link.subtitle}</p>}
       </div>
       <motion.span variants={{ hover: { rotate: -45, backgroundColor: "#F5C518", color: "#0A0A0D" } }} className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-white/30 text-white">
-        <i className="fa-solid fa-arrow-right" />
+        <Icon name="arrow-right" />
       </motion.span>
     </div>
   </motion.a>

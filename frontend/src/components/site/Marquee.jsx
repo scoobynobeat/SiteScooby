@@ -1,11 +1,12 @@
 import { SITE } from "@/data/fallback";
+import { Icon } from "./Icon";
 
 const Row = ({ words }) => (
   <div className="flex shrink-0 items-center">
     {words.map((w, i) => (
       <span key={`${w}-${i}`} className="flex items-center">
         <span className={`font-display px-8 text-5xl uppercase sm:text-7xl ${i % 2 ? "text-outline" : "text-white"}`}>{w}</span>
-        <i className="fa-solid fa-paw text-2xl text-[color:var(--gold)]" />
+        <Icon name="paw" className="text-2xl text-[color:var(--gold)]" />
       </span>
     ))}
   </div>

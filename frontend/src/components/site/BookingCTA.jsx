@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MaskLine, SectionLabel } from "./Reveal";
 import { whatsappHref } from "@/data/fallback";
+import { Icon } from "./Icon";
 
 export const BookingCTA = ({ profile }) => (
   <section id="shows" className="relative mx-auto max-w-7xl overflow-hidden px-5 py-28 sm:px-8">
@@ -23,7 +24,7 @@ export const BookingCTA = ({ profile }) => (
           whileTap={{ scale: 0.97 }}
           className="mt-10 inline-flex items-center gap-4 rounded-full bg-[#25D366] py-3 pl-3 pr-8 text-lg font-semibold text-black"
         >
-          <span className="grid h-12 w-12 place-items-center rounded-full bg-black text-2xl text-[#25D366]"><i className="fa-brands fa-whatsapp" /></span>
+          <span className="grid h-12 w-12 place-items-center rounded-full bg-black text-2xl text-[#25D366]"><Icon name="whatsapp" /></span>
           Contato pelo WhatsApp
         </motion.a>
       </div>

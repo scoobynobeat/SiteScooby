@@ -5,7 +5,6 @@ export const SITE = {
     name: "Scooby no Beat",
     handle: "@scoobynobeat",
     tagline: "Joga pro cachorro",
-    bio: "",
     listeners: "120,5 mil",
     avatar: "/artist.webp",
     spotify_artist_id: "7A3PnERPZhRjBkdoWKzc7H",
@@ -39,12 +38,3 @@ export function whatsappHref(profile) {
   const msg = profile?.whatsapp_message;
   return msg ? `${base}?text=${encodeURIComponent(msg)}` : base;
 }
-
-export const ICONS = {
-  spotify: "fa-brands fa-spotify",
-  instagram: "fa-brands fa-instagram",
-  youtube: "fa-brands fa-youtube",
-  tiktok: "fa-brands fa-tiktok",
-  whatsapp: "fa-brands fa-whatsapp",
-  link: "fa-solid fa-link",
-};

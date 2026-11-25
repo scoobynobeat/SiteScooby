@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ICONS } from "@/data/fallback";
+import { Icon } from "./Icon";
 
 const KEYS = ["spotify", "instagram", "youtube", "tiktok"];
 
@@ -22,7 +22,7 @@ export const SocialRow = ({ profile }) => {
           whileTap={{ scale: 0.92 }}
           className="grid h-12 w-12 place-items-center rounded-full border border-white/15 bg-white/5 text-lg backdrop-blur-xl transition-colors duration-300 hover:border-[color:var(--gold)] hover:bg-[color:var(--gold)] hover:text-black"
         >
-          <i className={ICONS[k]} />
+          <Icon name={k} />
         </motion.a>
       ))}
     </div>
