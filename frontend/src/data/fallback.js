@@ -1,4 +1,6 @@
 export const SITE = {
+  url: "https://scoobynobeat.com.br/",
+  share_message: "Conheça o Scooby no Beat, joga pro cachorro! Ouça e siga:",
   profile: {
     name: "Scooby no Beat",
     handle: "@scoobynobeat",
@@ -26,6 +28,10 @@ export const SITE = {
     { id: "l5", title: "Contrate para shows", subtitle: "Fale direto no WhatsApp", url: "https://wa.me/5573982260592?text=Ol%C3%A1%20Barreto!%20Quero%20contratar%20um%20show%20de%20Scooby%20no%20Beat.", image: "/link_whatsapp.webp", icon: "whatsapp" },
   ],
 };
+
+export function shareHref() {
+  return `https://wa.me/?text=${encodeURIComponent(`${SITE.share_message} ${SITE.url}`)}`;
+}
 
 export function whatsappHref(profile) {
   const base = profile?.socials?.whatsapp || "";
