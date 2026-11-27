@@ -1,6 +1,6 @@
 export const SITE = {
   url: "https://scoobynobeat.com.br/",
-  share_message: "Conheça o Scooby no Beat, joga pro cachorro! Ouça e siga:",
+  share_message: "Conheça o Scooby no Beat! Ouça e siga:",
   profile: {
     name: "Scooby no Beat",
     handle: "@scoobynobeat",
