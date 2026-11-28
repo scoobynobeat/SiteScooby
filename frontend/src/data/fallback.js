@@ -20,7 +20,7 @@ export const SITE = {
     marquee_words: ["Cachorro na voz", "Arrochafunk", "Paredão", "No Beat", "Joga Pro Cachorro", "Scooby no Beat"],
   },
   links: [
-    { id: "l1", title: "Piercing no Peito 🔥", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/intl-pt/artist/7A3PnERPZhRjBkdoWKzc7H?si=1BlRuXBvTvS1rJIcV2XwXw", image: "/capa_PiercingnoPeito.webp", icon: "spotify" },
+    { id: "l1", title: "Piercing no Peito🔥", subtitle: "Lançamento • Ouça agora no Spotify", url: "https://open.spotify.com/intl-pt/artist/7A3PnERPZhRjBkdoWKzc7H?si=1BlRuXBvTvS1rJIcV2XwXw", image: "/capa_PiercingnoPeito.webp", icon: "spotify" },
     { id: "l2", title: "Instagram", subtitle: "Bastidores, shows e novidades", url: "https://www.instagram.com/scoobynobeat", image: "/artist.webp", icon: "instagram" },
     { id: "l3", title: "TikTok", subtitle: "As Trends do Paredão", url: "https://www.tiktok.com/@scoobynobeat", image: "/link_tiktok.webp", icon: "tiktok" },
     { id: "l4", title: "YouTube", subtitle: "Clipes e Visualizers", url: "https://www.youtube.com/@scoobynobeat", image: "/link_youtube.webp", icon: "youtube" },
